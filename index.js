@@ -6,7 +6,9 @@ import AlbumList from './src/components/AlbumList';
 
 // create a component
 const App = () => (
-    // <Header></Header>
+    // use view to wrap things, without wrapper, 
+    // it is like mutiple return statements, 
+    // which means only the first return will be exectuted
     <View>
         <Header headerText={'Albums'} />
         <AlbumList />
