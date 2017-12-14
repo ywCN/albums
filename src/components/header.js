@@ -17,7 +17,11 @@ const styles = {
         fontSize: 20
     },
     viewStyle: {
-        backgroundColor: '#F8F8F8'
+        backgroundColor: '#F8F8F8',
+        justifyContent: 'center',
+        alignItems: 'center',
+        height: 60,
+        paddingTop: 15
     }
 };
 
