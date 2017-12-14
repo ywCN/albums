@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text } from 'react-native';
 import Card from './Card';
+import CardSection from './CardSection';
 
 // only need to present data to user
 // no lifecycle method, no need to access state
@@ -9,7 +10,9 @@ import Card from './Card';
 const AlbumDetail = (props) => {
     return (
         <Card>
-            <Text>{props.album.title}</Text>
+            <CardSection>
+                <Text>{props.album.title}</Text>
+            </CardSection>
         </Card>
     );
 };
