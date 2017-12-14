@@ -1,4 +1,9 @@
-import { AppRegistry } from 'react-native';
-import App from './App';
+// import a library to help create a component
+import React from 'react';
+import ReactNative from 'react-native';
 
-AppRegistry.registerComponent('albums', () => App);
+
+// create a component
+
+
+// Render it to the device
