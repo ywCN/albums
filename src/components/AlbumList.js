@@ -4,7 +4,7 @@ import axios from 'axios';
 
 class AlbumList extends Component {
     // state property of component
-    state = { alnums: [] };
+    state = { albums: [] };
 
     // this lifecycle method will be called automatically
     // like init()
@@ -18,12 +18,17 @@ class AlbumList extends Component {
         // debugger;
     }
 
+    // helper method
+    renderAlbums() {
+        return this.state.albums.map(album => <Text>{album.title}</Text>);
+    }
+
     render() {
         console.log(this.state); // will be called twice
 
         return (
             <View>
-                <Text>Album List!!!</Text>
+                {this.renderAlbums()}
             </View>
         );
     }
