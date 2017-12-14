@@ -3,8 +3,20 @@ import { View } from 'react-native';
 
 const CardSection = () => {
     return (
-        <View></View>
+        <View style={styles.containerStyle}></View>
     );
+};
+
+const styles = {
+    containerStyle: {
+        boardBottomWidth: 1,
+        padding: 5,
+        backgroundColor: '#fff',
+        justifyContent: 'flex-start',
+        flexDirection: 'row',
+        borderColor: '#ddd',
+        position: 'relative'
+    }
 };
 
 export default CardSection;
