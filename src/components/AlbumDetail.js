@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
 
 // only need to present data to user
 // no lifecycle method, no need to access state
@@ -7,9 +8,9 @@ import { View, Text } from 'react-native';
 
 const AlbumDetail = (props) => {
     return (
-        <View>
+        <Card>
             <Text>{props.album.title}</Text>
-        </View>
+        </Card>
     );
 };
 

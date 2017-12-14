@@ -4,9 +4,14 @@ import { View } from 'react-native';
 // Create this new Component instead of using View
 // because of reusing styles (no CSS file)
 
-const Card = () => {
+const Card = (props) => {
     return (
-        <View style={styles.containerStyle}></View>
+        // {props.children} will insert 
+        // <Text>{props.album.title}</Text>
+        // at {props.children}
+        <View style={styles.containerStyle}>
+            {props.children}
+        </View>
     );
 };
 
