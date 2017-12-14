@@ -6,3 +6,5 @@ const CardSection = () => {
         <View></View>
     );
 };
+
+export default CardSection;
