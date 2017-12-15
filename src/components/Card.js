@@ -6,9 +6,7 @@ import { View } from 'react-native';
 
 const Card = (props) => {
     return (
-        // {props.children} will insert 
-        // <Text>{props.album.title}</Text>
-        // at {props.children}
+        // {props.children} will insert JSX at {props.children}
         // because one component is passed to another
         <View style={styles.containerStyle}>
             {props.children}
