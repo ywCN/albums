@@ -9,7 +9,7 @@ const App = () => (
     // use view to wrap things, without wrapper, 
     // it is like mutiple return statements, 
     // which means only the first return will be exectuted
-    <View>
+    <View style={{ flex: 1 }}>
         <Header headerText={'Albums'} />
         <AlbumList />
     </View>
