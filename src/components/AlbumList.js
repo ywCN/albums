@@ -3,6 +3,9 @@ import { ScrollView } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
+// props is any type of data passed from parent component
+// to child component
+
 class AlbumList extends Component {
     // state property of component
     state = { albums: [] };
@@ -13,7 +16,7 @@ class AlbumList extends Component {
         // this call is async, so we need to know when it is completed
         // then() is for things after the AJAX request is completed
         axios.get('https://rallycoding.herokuapp.com/api/music_albums')
-        .then(response => this.setState({ albums: response.data }));
+            .then(response => this.setState({ albums: response.data }));
         
         // console.log('componentWillMount in AlbumList is called!!!!');
         // debugger;
