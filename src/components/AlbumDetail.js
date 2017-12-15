@@ -8,14 +8,14 @@ import CardSection from './CardSection';
 // so this component can be a functional component
 
 const AlbumDetail = ({ album }) => {
-    const { title, artist, thumnail_image } = album;
+    const { title, artist, thumbnail_image } = album;
     return (
         <Card>
             <CardSection>
                 <View>
                     <Image 
                         style={styles.thumnailStyle}
-                        source={{ uri: thumnail_image }} 
+                        source={{ uri: thumbnail_image }} 
                     />
                 </View>
                 <View style={styles.headerContentStyle}>
